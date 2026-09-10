@@ -1,13 +1,6 @@
-let math = 20;
-
-let physique = 15;
-
-let svt = 10;
-
-let SI = 19;
-
-let result = math + physique + svt + SI;
-
-let sum = result/4;
-
-console.log(sum);
+let nom  = "Rajae";
+let prenom = "El Harrak";
+let formation = "Développement Web";
+console.log(nom);
+console.log(prenom);
+console.log(formation);
