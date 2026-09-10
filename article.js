@@ -1,10 +1,12 @@
-let prix = 60;
-let quantite = 3;
-let produit = prix * quantite;
-let somme = prix + quantite;
-let difference = prix - quantite;
-let quotient = prix / quantite
-console.log("produit", produit);
-console.log("somme", somme);
-console.log("difference", difference);
-console.log("quotient", quotient);
+const prompt = require('prompt-sync')();
+
+let article = prompt("Nom de l'article :");
+let prix = Number(prompt("Prix :"));
+let quantite = Number(prompt("Quantite :"));
+
+let total = prix * quantite;
+
+console.log("Article", article);
+console.log("Prix", prix);
+console.log("Quantite",quantite);
+console.log("Total", total);
