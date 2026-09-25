@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+    <title>HTML Target Attribute</title>
+
+</head>
+
+<body>
+
+    <h1>HTML Hyperlinks and Target</h1>
+
+    <!-- Open in the same tab -->
+    <h2>1. _self</h2>
+    <a href="https://www.google.com" target="_self">
+        Open Google in the same tab
+    </a>
+
+    <br><br>
+
+    <!-- Open in a new tab -->
+    <h2>2. _blank</h2>
+    <a href="https://www.google.com" target="_blank">
+        Open Google in a new tab
+    </a>
+
+    <br><br>
+
+    <!-- Open in the parent frame -->
+    <h2>3. _parent</h2>
+    <a href="https://www.google.com" target="_parent">
+        Open Google in the parent frame
+    </a>
+
+    <br><br>
+
+    <!-- Open in the top-level window -->
+    <h2>4. _top</h2>
+    <a href="https://www.google.com" target="_top">
+        Open Google in the top-level window
+    </a>
+    <h1>Use an image as a link</h1>
+    <p>Click on the image below to visit Google:</p>
+    <a href="https://www.google.com">
+        <img src="image.jpg" width="50" height="50" >
+    </a>
+<br><br>
+
+    <h1>Link to an Email Address</h1>
+    <p>Click on the link below to send an email:</p>
+    <a href="mailto:example@example.com">
+        Send Email
+    </a>
+    <br><br>
+
+    <h1>Button as a link</h1>
+    <button onclick="window.location='https://www.google.com'">
+        Visit Google
+    </button>
+    <br><br>
+
+    <h1>Link Titles</h1>
+    <p>Hover over the link below to see the title:</p>
+    <a href="https://www.google.com" title="Visit Google">
+        Google
+    </a>
+
+</body>
+</html>
