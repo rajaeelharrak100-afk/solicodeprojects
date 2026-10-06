@@ -1,0 +1,9 @@
+.liste-liens{
+    padding-right: 20px;
+}
+.liste-liens li{
+    margin-bottom: 20px;
+}
+.liste-liens a {
+    color: #2673e8; /* Un bleu plus moderne */
+}

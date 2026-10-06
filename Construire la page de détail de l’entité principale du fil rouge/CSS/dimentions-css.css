@@ -1,0 +1,9 @@
+.conteneur {
+    max-width: 800px;
+}
+.conteneur{
+    display: block;      /* Enlève les marges bizarres sous l'image */
+    width: 100%;         /* Prend toute la largeur de .conteneur */
+    height: 300px;       /* Force une hauteur fixe */
+    object-fit: cover;   /* Empêche la déformation */
+} 
