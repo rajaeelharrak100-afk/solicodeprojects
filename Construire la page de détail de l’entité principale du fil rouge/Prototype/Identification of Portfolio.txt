@@ -1,0 +1,13 @@
+## Identification of Portfolio Actions and Data
+
+| Type | Element | Description |
+|---|---|---|
+| Data | Project Name | Name of the presented project |
+| Data | Description | Presentation and explanation of the project |
+| Data | Technologies | Technologies used to create the project |
+| Data | Date | Project completion date |
+| Action | Home | Return to the home page |
+| Action | Projects | View other projects |
+| Action | About | View general information |
+| Action | Contact | Access the contact page |
+| Action | View Project | View the project details |
