@@ -1,0 +1,165 @@
+
+/* 1. Réglages généraux          */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f9fafb;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+}
+
+
+/* 2. Bannière d'accueil         */
+
+
+.banniere-accueil {
+    padding: 96px 24px;
+    text-align: center;
+    background: #ffffff;
+
+    /* Fond quadrillé */
+    background-image: radial-gradient(
+        #e5e7eb 1px,
+        transparent 1px
+    );
+
+    background-size: 24px 24px;
+}
+
+/* Titre de la bannière */
+
+.banniere-accueil h1 {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 56px;
+    color: #0a2042;
+}
+
+/* Texte de la bannière */
+
+.banniere-accueil p {
+    max-width: 680px;
+    margin: 24px auto 0;
+    font-size: 17px;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+
+/* 3. Section des articles       */
+
+
+.section-articles {
+    padding: 80px 24px;
+}
+
+
+/* 4. Conteneur des articles     */
+
+
+.conteneur-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 5. Carte d'article            */
+
+
+.carte-article {
+    width: 300px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* 6. Image de l'article         */
+
+
+.carte-image {
+    display: block;
+}
+
+.carte-image img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* 7. Étiquette de catégorie     */
+
+
+.etiquette-categorie {
+    display: inline-block;
+    margin: 16px 16px 0;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 99px;
+    background: #f0f6ff;
+    color: #1c5bba;
+}
+
+/* 8. Contenu de la carte        */
+
+
+.carte-contenu {
+    padding: 20px;
+}
+
+/* Titre de l'article */
+
+.carte-contenu h3 {
+    margin: 0;
+}
+
+/* Description de l'article */
+
+.carte-contenu p {
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+/* 9. Métadonnées                */
+
+
+.carte-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 20px;
+    padding-top: 16px;
+    font-size: 12px;
+    color: #9ca3af;
+    border-top: 1px solid #f3f4f6;
+}
+
+/* 10. Adaptation aux mobiles    */
+
+
+@media (max-width: 600px) {
+
+    .banniere-accueil {
+        padding: 64px 20px;
+    }
+
+    .banniere-accueil h1 {
+        font-size: 36px;
+    }
+
+    .banniere-accueil p {
+        font-size: 15px;
+    }
+
+    .carte-article {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,72 @@
+
+/* 1. Box Model                  */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* 2. Section des articles       */
+
+
+.section-articles {
+    padding: 80px 24px;
+}
+
+
+/* 3. Conteneur des articles     */
+
+
+.conteneur-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 4. Carte d'article            */
+
+
+.carte-article {
+    width: 300px;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    margin-bottom: 24px;
+
+    /* Coins arrondis et contenu coupé */
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* 5. Image de l'article         */
+
+
+.carte-image {
+    display: block;
+}
+
+.carte-image img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* 6. Contenu de la carte        */
+
+.carte-contenu {
+    padding: 20px;
+}
+
+/* 7. Titre                      */
+
+
+.carte-contenu h3 {
+    margin: 0;
+}
+
+/* 8. Paragraphe                 */
+
+
+.carte-contenu p {
+    margin: 12px 0;
+}
