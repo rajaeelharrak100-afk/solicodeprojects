@@ -1,0 +1,30 @@
+
+/* 1. Règle générale Box Model   */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* 2. Carte d'article            */
+
+
+.carte-article {
+    width: 300px;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+}
+
+.carte-contenu {
+    padding: 30px;
+}
+
+
+/* 3. Conteneur des articles     */
+
+
+.conteneur-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+}

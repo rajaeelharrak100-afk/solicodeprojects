@@ -1,0 +1,57 @@
+
+/* 1. Box Model                  */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* 2. Section des articles       */
+
+
+.section-articles {
+    padding: 80px 24px;
+}
+
+
+/* 3. Conteneur des articles     */
+
+
+.conteneur-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 4. Carte d'article            */
+
+
+.carte-article {
+    width: 300px;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    margin-bottom: 24px;
+}
+
+
+/* 5. Contenu de la carte        */
+
+
+.carte-contenu {
+    padding: 20px;
+}
+
+/* 6. Titre de la carte          */
+
+
+.carte-contenu h3 {
+    margin: 0;
+}
+
+
+/* 7. Paragraphe de la carte     */
+
+.carte-contenu p {
+    margin: 12px 0;
+}
