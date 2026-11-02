@@ -1,0 +1,296 @@
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.en-tete-site {
+    background-color: white;
+    padding: 20px 5%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.barre-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* LOGO */
+
+.logo h2 {
+    color: #2563eb;
+    font-size: 28px;
+}
+
+
+/* MENU */
+
+.liens-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.liens-navigation a {
+    color: #333;
+    font-weight: bold;
+}
+
+.liens-navigation a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.bouton-principal {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.bouton-principal:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.contenu-principal {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.section-introduction {
+    text-align: center;
+    background-color: #dbeafe;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.section-introduction h1 {
+    font-size: 36px;
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+.section-introduction p {
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   ARTICLES
+========================= */
+
+.section-articles h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+
+/* LISTE DES CARTES */
+
+.liste-cartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px;
+}
+
+
+/* CARTE ARTICLE */
+
+.carte-article {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carte-article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carte-article h3 {
+    margin: 15px;
+    color: #2563eb;
+}
+
+.carte-article p {
+    margin: 0 15px 15px;
+}
+
+.carte-article a {
+    display: inline-block;
+    margin-left: 15px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.pied-de-page {
+    background-color: #1e293b;
+    color: white;
+    padding: 40px 5% 20px;
+}
+
+
+/* FOOTER CONTAINER */
+
+.conteneur-pied-de-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+/* FOOTER COLUMNS */
+
+.colonne-pied-de-page {
+    flex: 1;
+}
+
+.colonne-pied-de-page h3 {
+    margin-bottom: 15px;
+    color: #93c5fd;
+}
+
+.colonne-pied-de-page p {
+    margin-bottom: 10px;
+}
+
+.colonne-pied-de-page a:hover {
+    color: #93c5fd;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #475569;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* NAVIGATION */
+
+    .barre-navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .liens-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+    /* ARTICLES */
+
+    .liste-cartes {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    /* FOOTER */
+
+    .conteneur-pied-de-page {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+
+    /* INTRODUCTION */
+
+    .section-introduction h1 {
+        font-size: 26px;
+    }
+
+}

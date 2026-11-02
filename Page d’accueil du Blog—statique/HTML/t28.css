@@ -1,0 +1,284 @@
+
+/*  1. GLOBAL STYLES */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #1f2937;
+    background: #f9fafb;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* 2. HEADER */
+
+.en-tete-site {
+    padding: 20px 24px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.logo-sombre {
+    color: #111827;
+}
+
+.logo-couleur {
+    color: #2673e8;
+}
+
+
+/* 3. NAVIGATION FLEXBOX */
+
+.barre-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.liens-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.liens-navigation a {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* 4. BUTTON */
+
+.bouton-principal {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: #2673e8;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.bouton-principal:hover {
+    background: #1557b0;
+}
+
+
+/* 5. MAIN CONTENT */
+
+.contenu-principal {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 24px;
+}
+
+.section-introduction {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-introduction h1 {
+    color: #111827;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.section-introduction p {
+    color: #6b7280;
+    font-size: 17px;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* 6. ARTICLES */
+
+.section-articles h2 {
+    color: #111827;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.liste-cartes {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.carte-article {
+    flex: 1;
+    min-width: 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.carte-article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenu-carte {
+    padding: 20px;
+}
+
+.categorie {
+    display: inline-block;
+    color: #2673e8;
+    background: #eff6ff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contenu-carte h3 {
+    color: #111827;
+    font-size: 20px;
+}
+
+.contenu-carte p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.contenu-carte a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2673e8;
+    font-weight: bold;
+}
+
+.contenu-carte a:hover {
+    text-decoration: underline;
+}
+
+
+/*  7. FOOTER */
+
+.pied-de-page {
+    margin-top: 80px;
+    padding: 64px 24px 24px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+.conteneur-pied-de-page {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.colonne-pied-de-page {
+    flex: 1;
+}
+
+.colonne-pied-de-page h2 {
+    margin: 0 0 20px;
+    color: #111827;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.colonne-pied-de-page p,
+.colonne-pied-de-page a {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.colonne-pied-de-page li {
+    margin-bottom: 12px;
+}
+
+
+/* 8. FOOTER BOTTOM */
+
+.bas-pied-de-page {
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding-top: 24px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+}
+
+.bas-pied-de-page p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+
+/*  9. RESPONSIVE MOBILE */
+
+@media (max-width: 768px) {
+
+    .barre-navigation {
+        flex-direction: column;
+    }
+
+    .liens-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .liste-cartes {
+        flex-direction: column;
+    }
+
+    .conteneur-pied-de-page {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-introduction h1 {
+        font-size: 28px;
+    }
+
+    .section-articles h2 {
+        font-size: 23px;
+    }
+
+    .contenu-principal {
+        padding: 35px 16px;
+    }
+
+}
