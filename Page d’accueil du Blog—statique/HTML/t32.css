@@ -1,0 +1,224 @@
+
+/* 1. RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 2. BODY */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+    line-height: 1.6;
+}
+
+
+/* 3. HEADER */
+
+.header {
+    background-color: white;
+    padding: 25px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #7963d9;
+    font-size: 28px;
+}
+
+
+/* NAVIGATION */
+
+.liens-navigation {
+    list-style: none;
+
+    display: flex;
+
+    gap: 24px;
+}
+
+.liens-navigation a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.liens-navigation a:hover {
+    color: #7963d9;
+}
+
+
+/*  4. HERO */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #eeeaff;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.hero p {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.bouton {
+    display: inline-block;
+    background-color: #7963d9;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+/* 5. ARTICLES */
+
+.articles {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.articles h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+
+/* CONTENEUR DES CARTES */
+
+.conteneur-cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+/* CARTES */
+
+.carte {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.carte h3 {
+    margin-bottom: 15px;
+    color: #7963d9;
+}
+
+.carte p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.carte a {
+    color: #7963d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* 6. FOOTER */
+
+.footer {
+    background-color: #111827;
+    color: white;
+    padding: 50px 40px 20px;
+}
+
+
+/* CONTENEUR FOOTER */
+
+.conteneur-pied-de-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 48px;
+}
+
+
+/* COLONNES */
+
+.colonne {
+    flex: 1;
+    min-width: 180px;
+}
+
+.colonne h3 {
+    margin-bottom: 15px;
+    color: #b8a9ff;
+}
+
+.colonne p {
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+.colonne a {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.colonne a:hover {
+    color: #b8a9ff;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #374151;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #9ca3af;
+}
+
+
+/* 7. RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .liens-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .conteneur-pied-de-page {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
