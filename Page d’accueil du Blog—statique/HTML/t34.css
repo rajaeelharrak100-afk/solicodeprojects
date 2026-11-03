@@ -1,0 +1,343 @@
+
+/* 1. RESET ET BASE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/* 2. HEADER */
+
+.header {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 18px 24px;
+}
+
+.conteneur-header {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    color: #0a2042;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2673e8;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navigation a {
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.navigation a.active {
+    color: #2673e8;
+    font-weight: bold;
+}
+
+
+/* 3. BOUTONS */
+
+.bouton-principal {
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    background: #2673e8;
+    border: 1px solid #2673e8;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.bouton-principal:hover {
+    background: #1558bd;
+}
+
+.bouton-secondaire {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #1f2937;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* 4. BANNIERE D'ACCUEIL */
+
+.banniere-accueil {
+    padding: 96px 24px;
+    text-align: center;
+    background: #ffffff;
+    background-image: radial-gradient(
+        #e5e7eb 1px,
+        transparent 1px
+    );
+    background-size: 24px 24px;
+}
+
+.banniere-accueil h1 {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #0a2042;
+    font-family: Georgia, serif;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.15;
+}
+
+.banniere-accueil h1 span {
+    color: #2673e8;
+}
+
+.banniere-accueil p {
+    max-width: 680px;
+    margin: 24px auto 0;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.actions-banniere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+
+/* 5. SECTION FILTRES */
+
+.section-filtres {
+    padding: 40px 24px;
+    background: #f9fafb;
+}
+
+.conteneur-filtres {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-filtres h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #111827;
+}
+
+.liste-filtres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filtre {
+    display: inline-block;
+    padding: 8px 18px;
+    color: #4b5563;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.filtre.actif {
+    color: white;
+    background: #2673e8;
+    border-color: #2673e8;
+}
+
+
+/* 6. SECTION ARTICLES */
+
+.section-articles {
+    padding: 80px 24px;
+}
+
+.conteneur-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.entete-liste-articles {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.entete-liste-articles h2 {
+    margin: 0;
+    color: #111827;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+.entete-liste-articles p {
+    margin: 8px 0 0;
+    color: #6b7280;
+}
+
+.lien-voir-tout {
+    color: #2673e8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* 7. GRILLE FLEXBOX */
+
+.grille-articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 32px;
+}
+
+
+/* 8. CARTES ARTICLES */
+
+.carte-article {
+    flex: 1;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.carte-contenu {
+    padding: 20px;
+}
+
+.carte-contenu h3 {
+    margin: 0;
+    color: #111827;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.carte-contenu h3 a {
+    color: inherit;
+}
+
+.carte-contenu p {
+    margin: 12px 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.carte-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 16px;
+    color: #9ca3af;
+    font-size: 12px;
+    border-top: 1px solid #f3f4f6;
+}
+
+
+/* 9. ETIQUETTES CATEGORIES */
+
+.etiquette-categorie {
+    display: inline-block;
+    margin: 16px 16px 0;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    background: #f0f6ff;
+    border-radius: 99px;
+}
+
+.etiquette-categorie.bleu {
+    color: #1c5bba;
+}
+
+.etiquette-categorie.rose {
+    color: #db2777;
+    background: #fdf2f8;
+}
+
+.etiquette-categorie.vert {
+    color: #059669;
+    background: #ecfdf5;
+}
+
+
+/* 10. SECTION A PROPOS */
+
+.section-apropos {
+    padding: 70px 24px;
+    text-align: center;
+    background: white;
+}
+
+.section-apropos h2 {
+    margin-bottom: 16px;
+    color: #0a2042;
+    font-size: 32px;
+}
+
+.section-apropos p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #6b7280;
+}
+
+
+/* 11. FOOTER */
+
+.footer {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background: #0a2042;
+    font-size: 14px;
+}
