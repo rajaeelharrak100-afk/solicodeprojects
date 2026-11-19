@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf5;
+    color: #443b40;
+    line-height: 1.6;
+}
+
+header, footer {
+    background: white;
+    padding: 20px 8%;
+}
+
+.navbar, .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #443b40;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #d987a2;
+}
+
+.home, .contact {
+    background: #fcecf0;
+}
+
+.home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 12%;
+}
+
+.home-content, .home > div {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #bd6e8b;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.home h1 {
+    font-size: 55px;
+    margin: 15px 0 5px;
+}
+
+.home h2 {
+    color: #bd6e8b;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home p, .contact p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d987a2;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #bd6e8b;
+}
+
+section:not(.home) {
+    padding: 65px 10%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about, .contact {
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.skills {
+    background: #fff0f3;
+}
+
+.skills-container, .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card, .project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.skill-card {
+    width: 220px;
+    text-align: center;
+}
+
+.project-card {
+    width: 300px;
+    border: 1px solid #f1dce3;
+}
+
+.skill-card h3, .project-card h3 {
+    color: #bd6e8b;
+    margin-bottom: 10px;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 15px;
+    color: #a66c80;
+    font-size: 13px;
+}
+
+/* Featured / Personal project */
+.project-card .project-label {
+    display: inline-block;
+    margin: 0 0 10px;
+    padding: 4px 10px;
+    background: #fcecf0;
+    color: #bd6e8b;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
